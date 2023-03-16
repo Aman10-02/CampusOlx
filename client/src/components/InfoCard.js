@@ -20,7 +20,7 @@ function InfoCard({ add }) {
   }
   useEffect(() => {
     const getSeller = async () => {
-      const response = await fetch("http://localhost:5000/user/getdetail", {
+      const response = await fetch("https://campus-olx.onrender.com/user/getdetail", {
         method: "POST",
         mode: "cors",
         credentials: "include",
@@ -40,7 +40,7 @@ function InfoCard({ add }) {
   }, [add]);
 
   const CreateConversation = async () => {
-      const response = await fetch("http://localhost:5000/conversation", {
+      const response = await fetch("https://campus-olx.onrender.com/conversation", {
         method: "POST",
         mode: "cors",
         credentials: "include",

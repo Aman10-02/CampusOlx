@@ -31,7 +31,7 @@ function App() {
     console.log("effect used")
     const getUser = () => {
       console.log("inside get user func")
-      fetch("http://localhost:5000/auth/login/success", {
+      fetch("https://campus-olx.onrender.com/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {

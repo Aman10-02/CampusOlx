@@ -20,7 +20,7 @@ function PriceCard(props) {
     const handlesubmit = async (e) => {
       e.preventDefault();
       if(title && price){
-        const response = await fetch("http://localhost:5000/update/price", {
+        const response = await fetch("https://campus-olx.onrender.com/update/price", {
           method: "POST",
           mode:"cors",
           credentials: "include",
@@ -43,7 +43,7 @@ function PriceCard(props) {
     // console.log("ads page",username)
     // console.log("ads page fav", favourite)
     const setfav = async () => {
-        const response = await fetch("http://localhost:5000/adds/favourite", {
+        const response = await fetch("https://campus-olx.onrender.com/adds/favourite", {
             method: "POST",
             mode: "cors",
             credentials: "include",

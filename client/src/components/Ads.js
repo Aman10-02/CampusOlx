@@ -13,7 +13,7 @@ function Ads(props) {
     console.log("ads page cookie", process.env.REACT_APP_ADMIN_ID)
     // console.log("ads page fav", favourite)
     const setfav = async () => {
-        const response = await fetch("http://localhost:5000/adds/favourite", {
+        const response = await fetch("https://campus-olx.onrender.com/adds/favourite", {
             method: "POST",
             mode: "cors",
             credentials: "include",
@@ -44,7 +44,7 @@ function Ads(props) {
 
     const deleteAdd = async () => {
         alert("add deleted")
-        const response = await fetch("http://localhost:5000/adds/delete", {
+        const response = await fetch("https://campus-olx.onrender.com/adds/delete", {
             method: "POST",
             mode: "cors",
             credentials: "include",

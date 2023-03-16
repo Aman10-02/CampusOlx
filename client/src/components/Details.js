@@ -68,7 +68,7 @@ function Details() {
           // const item = { ...inputs, image: downloadURL }; 
           // alert(JSON.stringify(item))
           // console.log("inputs are ", item)
-          const response = await fetch("http://localhost:5000/update/image", {
+          const response = await fetch("https://campus-olx.onrender.com/update/image", {
             method: "POST",
             mode: "cors",
             credentials: "include",
@@ -94,7 +94,7 @@ function Details() {
     console.log("des", des)
     if(des){
 
-      const response = await fetch("http://localhost:5000/update/des", {
+      const response = await fetch("https://campus-olx.onrender.com/update/des", {
         method: "POST",
         mode: "cors",
         credentials: "include",

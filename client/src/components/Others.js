@@ -15,7 +15,7 @@ function Others() {
     console.log("others page", seller)
     useEffect(() => {
         const getsellerAds = async () => {
-            const response = await fetch("http://localhost:5000/adds/seller", {
+            const response = await fetch("https://campus-olx.onrender.com/adds/seller", {
                 method: "POST",
                 mode: "cors",
                 credentials: "include",
@@ -38,7 +38,7 @@ function Others() {
 
     const deleteAdd = async() => {
         alert("user deleted")
-        const response = await fetch("http://localhost:5000/user/delete", {
+        const response = await fetch("https://campus-olx.onrender.com/user/delete", {
             method: "POST",
             mode: "cors",
             credentials: "include",

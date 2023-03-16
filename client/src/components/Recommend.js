@@ -13,7 +13,7 @@ function Recommend() {
         console.log("effect used")
         const getAds = () => {
             console.log("inside get ads func")
-            fetch("http://localhost:5000/adds/get/recommend", {
+            fetch("https://campus-olx.onrender.com/adds/get/recommend", {
                 method: "GET",
                 credentials: "include",
                 headers: {

@@ -17,7 +17,7 @@ function Conversations({ conv }) {
     // console.log(activeAdd)
     useEffect(() => {
         const getDetails = async () => {
-            const response = await fetch("http://localhost:5000/adds/conv", {
+            const response = await fetch("https://campus-olx.onrender.com/adds/conv", {
                 method: "POST",
                 mode: "cors",
                 credentials: "include",

@@ -20,7 +20,7 @@ function Header() {
     const isMenu = useMediaQuery({ query: `(min-width: 769px)` });
     const [input, setInput] = useState("")
     const logout = () => {
-        window.open("http://localhost:5000/auth/logout", "_self");
+        window.open("https://campus-olx.onrender.com/auth/logout", "_self");
     };
     function sellbtn() {
         userimage ? (navigate("/sell")) : (alert("Login Required"))
@@ -34,7 +34,7 @@ function Header() {
         setInput("")
     }
     const google = () => {
-        window.open("http://localhost:5000/auth/google", "_self");
+        window.open("https://campus-olx.onrender.com/auth/google", "_self");
     };
     return (
         <Container>
