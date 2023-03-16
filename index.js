@@ -59,10 +59,10 @@ app.use("/message", messageRoutes);
 
 
 
-app.use(express.static(path.join(__dirname, "/client/public")));
+app.use(express.static(https://campus-olx.onrender.com/)));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/public', '/index.html'));
+  res.sendFile(https://campus-olx.onrender.com/);
 });
 
 
