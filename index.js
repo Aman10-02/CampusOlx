@@ -1,3 +1,4 @@
+let myuser
 require('dotenv').config();
 // console.log(process.env)
 const express = require("express");
@@ -28,16 +29,9 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.use(
-//     cors({
-//       origin: "http://localhost:3000",
-//       methods: "GET,POST,PUT,DELETE",
-//       credentials: true,
-//     })
-//   );
 app.use(
     cors({
-      origin: "https://olx-campus.onrender.com",
+      origin: "http://localhost:3000",
       methods: "GET,POST,PUT,DELETE",
       credentials: true,
     })
@@ -66,15 +60,13 @@ app.use("/message", messageRoutes);
 
 
 
-//app.use(express.static("http://olx-campus.onrender.com/client/build"));
-
-//app.get('*', (req, res) => {
-//  res.sendFile("http://olx-campus.onrender.com/client/build/index.html");
-//});
+app.use(express.static(path.join(__dirname, "/client/build")));
 
 app.get('*', (req, res) => {
-  res.redirect("https://olx-campus.onrender.com/");
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
+
+
 
 
 

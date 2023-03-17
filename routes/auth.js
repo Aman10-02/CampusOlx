@@ -24,7 +24,7 @@ router.get("/login/failed", (req, res) => {
 });
 router.get("/logout", (req, res) => {
     req.logout();
-    res.redirect("https://olx-campus.onrender.com/");
+    res.redirect("https://campus-olx.onrender.com/");
   });
 
 
@@ -35,7 +35,7 @@ router.get('/google', passport.authenticate('google', {
 }));
 
 router.get('/google/callback', passport.authenticate('google', {
-    successRedirect: "https://olx-campus.onrender.com/",
+    successRedirect: "https://campus-olx.onrender.com/",
     failureRedirect: "/login/failed",
 }));
 
@@ -51,7 +51,7 @@ router.get('/outlook', passport.authenticate('microsoft', {
 }));
 
 router.get('/outlook/callback', passport.authenticate('microsoft', {
-    successRedirect: "https://olx-campus.onrender.com/",
+    successRedirect: "https://campus-olx.onrender.com/",
     failureRedirect: "/login/failed",
 }));
 

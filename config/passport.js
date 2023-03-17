@@ -11,12 +11,12 @@ const User = require('../models/User.model')
 
 
 passport.serializeUser((user, done) => {
-    console.log("serialize user", user.id);
+    // console.log(user.id);
     // done(null, user);
     done(null, user.googleId);
 });
 passport.deserializeUser((id, done) => {
-    console.log("deserialize useer id is",id)
+    console.log("id is",id)
     User.findOne({googleId: id}).then((man) => {
         
         done(null,man );
