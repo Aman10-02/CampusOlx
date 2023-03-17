@@ -59,11 +59,11 @@ app.use("/message", messageRoutes);
 
 
 
-app.use(express.static("http://olx-campus.onrender.com/client/build"));
+//app.use(express.static("http://olx-campus.onrender.com/client/build"));
 
-app.get('*', (req, res) => {
-  res.sendFile("http://olx-campus.onrender.com/client/build/index.html");
-});
+//app.get('*', (req, res) => {
+//  res.sendFile("http://olx-campus.onrender.com/client/build/index.html");
+//});
 
 
 
