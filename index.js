@@ -72,7 +72,9 @@ app.use("/message", messageRoutes);
 //  res.sendFile("http://olx-campus.onrender.com/client/build/index.html");
 //});
 
-
+app.get('*', (req, res) => {
+  res.redirect("https://olx-campus.onrender.com/");
+});
 
 
 
