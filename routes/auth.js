@@ -35,7 +35,7 @@ router.get('/google', passport.authenticate('google', {
 }));
 
 router.get('/google/callback', passport.authenticate('google', {
-    successRedirect: "https://campus-olx.onrender.com/",
+    successRedirect: "https://olx-campus.onrender.com/",
     failureRedirect: "/login/failed",
 }));
 
